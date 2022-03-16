@@ -79,4 +79,8 @@ jobs:
       - run:
           name: Run Browser Tests Tests
           command: php artisan dusk
+        
+      - run:
+          name: "Run Unit Tests"
+          command: ./vendor/bin/phpunit tests/Unit
 
